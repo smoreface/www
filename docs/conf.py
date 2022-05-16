@@ -65,7 +65,18 @@ extensions = [
     'notfound.extension',
     'sphinxemoji.sphinxemoji',
     'recommonmark',
+    'sphinxext.opengraph',
 ]
+
+ogp_site_name = "Write the Docs"
+ogp_image = (
+    'https://www.writethedocs.org/_static/sticker-wtd-colors.png'
+)
+# Inspired by https://github.com/executablebooks/MyST-Parser/pull/404/
+ogp_custom_meta_tags = [
+    '<meta name="twitter:card" content="summary_large_image" />',
+]
+
 blog_baseurl = 'https://www.writethedocs.org/'
 blog_path = 'blog/archive'
 blog_authors = {
